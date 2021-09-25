@@ -8,11 +8,11 @@ class PythonSelfDefinedFunctions():
         if it is Numeric ruturns number
         if not prints "Please gives the input only in numbers"  '''
         try:
-            x = float(input(question))
+            x = int(input(question))
             return x
         except ValueError:
             print("Please gives the input only in numbers!")
-            self.ask_and_check_numeric()
+            self.ask_and_check_numeric(question)
   
     
                 
